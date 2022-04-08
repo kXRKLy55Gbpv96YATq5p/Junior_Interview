@@ -50,7 +50,7 @@ ORDER BY count DESC
 <!-- ЗАКРЕПИТЕ ВАШ SELECT ОТ 3 ЗАДАНИЯ ЗДЕСЬ -->
 ```sql
 SELECT FIRST_CHAR, COUNT(FIRST_CHAR) AS COUNT FROM (
-    SELECT name, SUBSTRING(name, 1, 1) AS FIRST_CHAR
+    SELECT SUBSTRING(name, 1, 1) AS FIRST_CHAR
     FROM Passenger
 ) t
 GROUP BY FIRST_CHAR
